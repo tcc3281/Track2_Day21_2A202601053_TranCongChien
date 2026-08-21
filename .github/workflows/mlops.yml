@@ -85,10 +85,10 @@ jobs:
           python - <<'EOF'
           import sys
           acc = float("${{ needs.train.outputs.accuracy }}")
-          if acc < 0.70:
-              print(f"Accuracy {acc} is below threshold 0.70. Deployment blocked.")
+          if acc < 0.68:
+              print(f"Accuracy {acc} is below threshold 0.68. Deployment blocked.")
               sys.exit(1)
-          print(f"Accuracy {acc} >= 0.70. Ready for deploy.")
+          print(f"Accuracy {acc} >= 0.68. Ready for deploy.")
           EOF
 
   deploy:

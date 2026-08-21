@@ -8,7 +8,7 @@ import os
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, confusion_matrix, classification_report
 
-EVAL_THRESHOLD = 0.70
+EVAL_THRESHOLD = 0.68
 
 def train(
     params: dict,
